@@ -9,29 +9,20 @@ This repository contains a Computable General Equilibrium (CGE) model with a Cob
 - **Numerical Optimization**: The model uses a nonlinear programming (NLP) formulation for solving the optimization problem.
 
 ## Model Equations
-1. **Production Function**:
-   $
-   x_i = a_i \cdot u
-   $
+1. **Production Function**: $x_i = a_i \cdot u$
    where:
    - $x_i$ is the output of sector $i$,
    - $a_i$ is the production coefficient for sector $i$,
    - $u$ is the aggregate utility level.
 
-2. **Utility Function**:
-   $
-   u = \sum_{i} \alpha_i \cdot \log(x_i + \epsilon)
-   $
+2. **Utility Function**:$u = \sum_{i} \alpha_i \cdot \log(x_i + \epsilon)$
    where:
    - $u$ is the aggregate utility,
    - $\alpha_i$ is the utility weight for sector $i$,
    - $x_i$ is the output of sector $i$,
    - $\epsilon$ is a small positive constant added to avoid taking the logarithm of zero.
 
-3. **Budget Constraint**:
-   $
-   \sum_{i} p_i \cdot x_i \leq Y
-   $
+3. **Budget Constraint**:$\sum_{i} p_i \cdot x_i \leq Y$
    where:
    - $p_i$ is the price of goods produced by sector $i$,
    - $x_i$ is the output of sector $i$,
