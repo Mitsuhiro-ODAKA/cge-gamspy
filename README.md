@@ -10,9 +10,7 @@ This repository contains a Computable General Equilibrium (CGE) model with a Cob
 
 ## Model Equations
 1. **Production Function**:
-   $$
-   x_i = a_i \cdot u
-   $$
+   $$x_i = a_i \cdot u$$
    where:
    - $x_i$ is the output of sector $i$,
    - $a_i$ is the production coefficient for sector $i$,
@@ -26,7 +24,8 @@ This repository contains a Computable General Equilibrium (CGE) model with a Cob
    - $x_i$ is the output of sector $i$,
    - $\epsilon$ is a small positive constant added to avoid taking the logarithm of zero.
 
-4. **Budget Constraint**:$$\sum_{i} p_i \cdot x_i \leq Y$$
+4. **Budget Constraint**:
+   $$\sum_{i} p_i \cdot x_i \leq Y$$
    where:
    - $p_i$ is the price of goods produced by sector $i$,
    - $x_i$ is the output of sector $i$,
